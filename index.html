@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta CEP</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        .container {
+            max-width: 600px;
+            background-color: rgb(40, 88, 28);
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            width: 600px;
+            margin-left: -12px;
+            border: 1 solid rgb(236, 236, 14);
+            border-radius: 5px;
+            background-color: #F7D042;
+            font-size: 30px;
+
+        }
+        h1:hover {
+            background-color: rgb(14, 236, 44);
+            color: rgb(236, 236, 14);
+        }
+        smal {
+            color: rgba(150, 156, 150, 0.335);
+        }
+        .naoSelecionavel {
+            -webkit-touch-callout: none;  /* iPhone OS, Safari */
+            -webkit-user-select: none;    /* Chrome, Safari 3 */
+            -khtml-user-select: none;     /* Safari 2 */
+            -moz-user-select: none;       /* Firefox */
+            -ms-user-select: none;        /* IE10+ */
+            user-select: none;            /* Possível implementação no futuro */            
+        }
+        img {
+            width: 570px;
+            height: 150px;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="naoSelecionavel">Consulta de CEP Brasil</h1>
+        <img src="https://static7.depositphotos.com/1004841/738/i/950/depositphotos_7381892-stock-photo-flag-of-brazil.jpg" alt="">
+        
+        <form>
+            <div class="form-group">
+                <label for="cep" class="naoSelecionavel">CEP</label>
+                <input type="text" class="form-control" maxlength="9" id="cep">
+                <smal class="naoSelecionavel">00000-000</smal>
+            </div>
+            <div class="form-group">
+                <label for="logradouro" class="naoSelecionavel">Logradouro</label>
+                <input type="text" class="form-control" id="logradouro">
+                <smal class="naoSelecionavel">Rua.</smal>
+            </div>
+            <div class="form-group">
+                <label for="bairro" class="naoSelecionavel">Bairro</label>
+                <input type="text" class="form-control" id="bairro">
+                <smal class="naoSelecionavel">Bairro</smal>
+            </div>
+            <div class="form-group">
+                <label for="localidade" class="naoSelecionavel">Localidade</label>
+                <input type="text" class="form-control" id="localidade">
+                <smal class="naoSelecionavel">Cidade</smal>
+            </div>
+            <div class="form-group">
+                <label for="uf" class="naoSelecionavel">UF</label>
+                <input type="text" class="form-control" id="uf">
+                <smal class="naoSelecionavel">Estado</smal>
+            </div>
+        </form>
+    </div>
+    <div class="brasil-flag">
+        <div class="losangue"></div>
+        <div class="circle"></div>
+    </div>
+    
+
+    <script src="src/js/main.js"></script>
+    
+</body>
+</html>
